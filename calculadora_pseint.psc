@@ -1,8 +1,11 @@
 Algoritmo CalculadoraCompleta
 	Definir opcion Como Entero
-	Definir n1, n2, resultado Como Real
+	Definir n1, n2 Como Real
+	Definir resultado Como Real
 	Definir base, altura, area Como Real
 	Definir e1, e2, rmod Como Entero
+	Definir cantidad, i Como Entero
+	Definir numero Como Real
 
 	Repetir
 		Escribir "---------------------------------------------"
@@ -23,8 +26,6 @@ Algoritmo CalculadoraCompleta
 
 		Segun opcion Hacer
 			1:
-				Definir cantidad, i Como Entero
-				Definir numero, resultado Como Real
 				Escribir "¿Cuantos numeros desea sumar?"
 				Leer cantidad
 				resultado <- 0
@@ -36,8 +37,6 @@ Algoritmo CalculadoraCompleta
 				Escribir "Resultado de la suma: ", resultado
 
 			2:
-				Definir cantidad, i Como Entero
-				Definir numero, resultado Como Real
 				Escribir "¿Cuantos numeros desea restar?"
 				Leer cantidad
 				Si cantidad > 0 Entonces
@@ -54,8 +53,6 @@ Algoritmo CalculadoraCompleta
 				FinSi
 
 			3:
-				Definir cantidad, i Como Entero
-				Definir numero, resultado Como Real
 				Escribir "¿Cuantos numeros desea multiplicar?"
 				Leer cantidad
 				Si cantidad > 0 Entonces
