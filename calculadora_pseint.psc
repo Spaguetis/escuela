@@ -26,47 +26,65 @@ Algoritmo CalculadoraCompleta
 
 		Segun opcion Hacer
 			1:
-				Escribir "¿Cuantos numeros desea sumar?"
-				Leer cantidad
-				resultado <- 0
-				Para i <- 1 Hasta cantidad Con Paso 1 Hacer
-					Escribir "Ingrese el numero ", i, ":"
-					Leer numero
-					resultado <- resultado + numero
-				FinPara
-				Escribir "Resultado de la suma: ", resultado
+				Definir seguir Como Caracter
+				seguir <- "S"
+				Mientras seguir = "S" O seguir = "s" Hacer
+					Escribir "¿Cuantos numeros desea sumar?"
+					Leer cantidad
+					resultado <- 0
+					Para i <- 1 Hasta cantidad Con Paso 1 Hacer
+						Escribir "Ingrese el numero ", i, ":"
+						Leer numero
+						resultado <- resultado + numero
+					FinPara
+					Escribir "Resultado de la suma: ", resultado
+					Escribir "¿Desea realizar otra suma? (S/N)"
+					Leer seguir
+				FinMientras
 
 			2:
-				Escribir "¿Cuantos numeros desea restar?"
-				Leer cantidad
-				Si cantidad > 0 Entonces
-					Escribir "Ingrese el numero 1:"
-					Leer resultado
-					Para i <- 2 Hasta cantidad Con Paso 1 Hacer
-						Escribir "Ingrese el numero ", i, ":"
-						Leer numero
-						resultado <- resultado - numero
-					FinPara
-					Escribir "Resultado de la resta: ", resultado
-				SiNo
-					Escribir "Debe ingresar al menos un numero."
-				FinSi
+				Definir seguir Como Caracter
+				seguir <- "S"
+				Mientras seguir = "S" O seguir = "s" Hacer
+					Escribir "¿Cuantos numeros desea restar?"
+					Leer cantidad
+					Si cantidad > 0 Entonces
+						Escribir "Ingrese el numero 1:"
+						Leer resultado
+						Para i <- 2 Hasta cantidad Con Paso 1 Hacer
+							Escribir "Ingrese el numero ", i, ":"
+							Leer numero
+							resultado <- resultado - numero
+						FinPara
+						Escribir "Resultado de la resta: ", resultado
+					SiNo
+						Escribir "Debe ingresar al menos un numero."
+					FinSi
+					Escribir "¿Desea realizar otra resta? (S/N)"
+					Leer seguir
+				FinMientras
 
 			3:
-				Escribir "¿Cuantos numeros desea multiplicar?"
-				Leer cantidad
-				Si cantidad > 0 Entonces
-					Escribir "Ingrese el numero 1:"
-					Leer resultado
-					Para i <- 2 Hasta cantidad Con Paso 1 Hacer
-						Escribir "Ingrese el numero ", i, ":"
-						Leer numero
-						resultado <- resultado * numero
-					FinPara
-					Escribir "Resultado de la multiplicacion: ", resultado
-				SiNo
-					Escribir "Debe ingresar al menos un numero."
-				FinSi
+				Definir seguir Como Caracter
+				seguir <- "S"
+				Mientras seguir = "S" O seguir = "s" Hacer
+					Escribir "¿Cuantos numeros desea multiplicar?"
+					Leer cantidad
+					Si cantidad > 0 Entonces
+						Escribir "Ingrese el numero 1:"
+						Leer resultado
+						Para i <- 2 Hasta cantidad Con Paso 1 Hacer
+							Escribir "Ingrese el numero ", i, ":"
+							Leer numero
+							resultado <- resultado * numero
+						FinPara
+						Escribir "Resultado de la multiplicacion: ", resultado
+					SiNo
+						Escribir "Debe ingresar al menos un numero."
+					FinSi
+					Escribir "¿Desea realizar otra multiplicacion? (S/N)"
+					Leer seguir
+				FinMientras
 
 			4:
 				Escribir "Ingrese el dividendo:"
