@@ -1,4 +1,4 @@
-Proceso CalculadoraCompleta
+Algoritmo CalculadoraCompleta
 	Definir opcion Como Entero
 	Definir n1, n2, resultado Como Real
 	Definir base, altura, area Como Real
@@ -116,4 +116,4 @@ Proceso CalculadoraCompleta
 
 		Escribir ""
 	Hasta Que opcion = 0
-FinProceso
+FinAlgoritmo
