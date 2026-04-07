@@ -3,6 +3,7 @@ Algoritmo CalculadoraCompleta
 	Definir n1, n2 Como Real
 	Definir resultado Como Real
 	Definir base, altura, area Como Real
+	Definir radio Como Real
 	Definir e1, e2, rmod Como Entero
 	Definir cantidad, i Como Entero
 	Definir numero Como Real
@@ -20,6 +21,7 @@ Algoritmo CalculadoraCompleta
 		Escribir "7. Raiz cuadrada"
 		Escribir "8. Area de un triangulo"
 		Escribir "9. Area de un rectangulo"
+		Escribir "10. Area de una circunferencia"
 		Escribir "0. Salir"
 		Escribir "Seleccione una opcion:"
 		Leer opcion
@@ -146,6 +148,16 @@ Algoritmo CalculadoraCompleta
 				Leer altura
 				area <- base * altura
 				Escribir "Area del rectangulo: ", area
+
+			10:
+				Escribir "Ingrese el radio de la circunferencia:"
+				Leer radio
+				Si radio >= 0 Entonces
+					area <- 3.1416 * (radio ^ 2)
+					Escribir "Area de la circunferencia: ", area
+				SiNo
+					Escribir "Error: el radio no puede ser negativo."
+				FinSi
 
 			0:
 				Escribir "Gracias por usar la calculadora."
